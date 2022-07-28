@@ -109,19 +109,21 @@ function IndexNavbar() {
                   <p>Courses</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem to="/nucleo-icons" tag={Link}>
+
+                  {/* <DropdownItem to="/nucleo-icons" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test1
+                  </DropdownItem> */}
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Pack
                   </DropdownItem>
                   <DropdownItem to="/landing-page" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    test12
+                    Module
                   </DropdownItem>
-                  <DropdownItem to="/profile-page" tag={Link}>
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Track
+                  </DropdownItem>
+                  {/* <DropdownItem to="/profile-page" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test3
                   </DropdownItem>
@@ -135,7 +137,7 @@ function IndexNavbar() {
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Documentation
-                  </DropdownItem>
+                  </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
@@ -150,33 +152,40 @@ function IndexNavbar() {
                   <p>For Companies</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem to="/nucleo-icons" tag={Link}>
+                  {/* <DropdownItem to="/nucleo-icons" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test1
+                  </DropdownItem> */}
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Transform your talent
                   </DropdownItem>
                   <DropdownItem to="/landing-page" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    test12
+                    Marketing solutions
                   </DropdownItem>
-                  <DropdownItem to="/profile-page" tag={Link}>
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Data solutions
+                  </DropdownItem>
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Tech solutions
+                  </DropdownItem>
+                  <DropdownItem to="/landing-page" tag={Link}>
+                    Hire zone4code graduates
+                  </DropdownItem>
+                  {/* <DropdownItem to="/profile-page" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test3
                   </DropdownItem>
                   <DropdownItem to="/login-page" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test4
-                  </DropdownItem>
+                  </DropdownItem> 
                   <DropdownItem
                     href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Documentation
-                  </DropdownItem>
+                  </DropdownItem>*/}
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/* <NavItem>
@@ -196,7 +205,7 @@ function IndexNavbar() {
               </NavItem> */}
               <NavItem>
                 <NavLink
-                 // href="https://twitter.com/CreativeTim?ref=creativetim"
+                  // href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
                   id="twitter-tooltip"
                 >

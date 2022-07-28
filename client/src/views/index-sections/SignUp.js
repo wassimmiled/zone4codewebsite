@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
@@ -7,7 +9,7 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  CardTitle,Col,
+  CardTitle, Col,
   Form,
   Input,
   InputGroupAddon,
@@ -23,6 +25,31 @@ function SignUp() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
+  const [inputValueFirstname, setInputValueFirstname] = React.useState("");
+  const [inputValueEmail, setInputValueEmail] = React.useState("");
+  const [inputValueEmailContent, setInputValueEmailContent] = React.useState("");
+
+  const onChangeHandlerFirstname = event => {
+    setInputValueFirstname(event.target.value);
+    console.log('setInputValueFirstname', inputValueFirstname)
+  };
+  const onChangeHandlerEmail = event => {
+    setInputValueEmail(event.target.value);
+    console.log('setInputValueEmail', inputValueEmail)
+  };
+  const onChangeHandlerEmailContent = event => {
+    setInputValueEmailContent(event.target.value);
+    console.log('setInputValueEmailContent', inputValueEmailContent)
+  };
+  const onSubmit = event => {
+    event.preventDefault()
+    console.log(inputValueFirstname, inputValueEmail, inputValueEmailContent)
+    axios.post("http://localhost:3001/api/emailing/sendmail", {
+      ValueFirstname: inputValueFirstname,
+      ValueEmail: inputValueEmail,
+      ValueEmailContent: inputValueEmailContent
+    });
+  };
   return (
     <>
       <div
@@ -38,10 +65,10 @@ function SignUp() {
 
 
 
-<div className="section section-contact-us text-center">
+        <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">CONTACT US
-</h2>
+            </h2>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
@@ -57,6 +84,8 @@ function SignUp() {
                   <Input
                     placeholder="First Name..."
                     type="text"
+                    onChange={onChangeHandlerFirstname}
+
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
                   ></Input>
@@ -74,6 +103,8 @@ function SignUp() {
                   <Input
                     placeholder="Email..."
                     type="text"
+                    onChange={onChangeHandlerEmail}
+
                     onFocus={() => setLastFocus(true)}
                     onBlur={() => setLastFocus(false)}
                   ></Input>
@@ -82,6 +113,8 @@ function SignUp() {
                   <Input
                     cols="80"
                     name="name"
+                    onChange={onChangeHandlerEmailContent}
+
                     placeholder="Type a message..."
                     rows="4"
                     type="textarea"
@@ -93,7 +126,8 @@ function SignUp() {
                     className="btn-round" to="/nucleo-icons"
                     color="info"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    onClick={onSubmit}
+
                     size="lg"
                   >
                     Send Message
