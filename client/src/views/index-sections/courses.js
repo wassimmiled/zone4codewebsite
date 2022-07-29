@@ -226,8 +226,6 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                     
-
                         Product Management
                       </NavLink>
                     </NavItem>
