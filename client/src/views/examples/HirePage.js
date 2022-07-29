@@ -11,6 +11,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import SignUp from "../index-sections/SignUp";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
@@ -88,24 +89,24 @@ function HirePage() {
                     }}
                   ></div>
                   <h3>
-                  How can we source talent for you?                  </h3>
+                    How can we source talent for you?                  </h3>
                   <p>
                     <ul>
-                    <li>
-                      1-Our global team cultivates the right talent by preparing students through our full-time Immersive courses to develop soft and hard skills in software engineering, UX design, and data science to excel in their tech career.
-                    </li>
-                    <li>
-                      2-You reach out to us because you need talent. Our Talent team works directly with you to identify skills gaps and define candidate profiles.
-                    </li>
-                    <li>
-                      3-You send us your job description(s). Our Partnerships team expedites the screening process by recommending qualified zone4code candidates that meet the requirements of your specific tech roles.
-                    </li>
-                    <li>
-                      4-We help you fill your most critical digital roles. Your business then embarks on a talent-led transformation journey.
-                    </li>
-                    <li>
-                      5-Your company unlocks a new recruitment strategy that moves your business forward — at no cost. Our talent helps you achieve your transformation goals.
-                    </li>
+                      <li>
+                        1-Our global team cultivates the right talent by preparing students through our full-time Immersive courses to develop soft and hard skills in software engineering, UX design, and data science to excel in their tech career.
+                      </li>
+                      <li>
+                        2-You reach out to us because you need talent. Our Talent team works directly with you to identify skills gaps and define candidate profiles.
+                      </li>
+                      <li>
+                        3-You send us your job description(s). Our Partnerships team expedites the screening process by recommending qualified zone4code candidates that meet the requirements of your specific tech roles.
+                      </li>
+                      <li>
+                        4-We help you fill your most critical digital roles. Your business then embarks on a talent-led transformation journey.
+                      </li>
+                      <li>
+                        5-Your company unlocks a new recruitment strategy that moves your business forward — at no cost. Our talent helps you achieve your transformation goals.
+                      </li>
                     </ul>
 
                   </p>
@@ -116,7 +117,7 @@ function HirePage() {
             </div>
           </Container>
         </div>
-        <div className="section section-team text-center">
+        {/* <div className="section section-team text-center">
           <Container>
             <h2 className="title">Here is our team</h2>
             <div className="team">
@@ -250,71 +251,9 @@ function HirePage() {
               </Row>
             </div>
           </Container>
-        </div>
+        </div> */}
         <div className="section section-contact-us text-center">
-          <Container>
-            <h2 className="title">Contact us</h2>
-            <p className="description">Your career is very important to us.</p>
-            <Row>
-              <Col className="text-center ml-auto mr-auto" lg="6" md="8">
-                <InputGroup
-                  className={
-                    "input-lg" + (firstFocus ? " input-group-focus" : "")
-                  }
-                >
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="now-ui-icons users_circle-08"></i>
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="First Name..."
-                    type="text"
-                    onFocus={() => setFirstFocus(true)}
-                    onBlur={() => setFirstFocus(false)}
-                  ></Input>
-                </InputGroup>
-                <InputGroup
-                  className={
-                    "input-lg" + (lastFocus ? " input-group-focus" : "")
-                  }
-                >
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="now-ui-icons ui-1_email-85"></i>
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="Email..."
-                    type="text"
-                    onFocus={() => setLastFocus(true)}
-                    onBlur={() => setLastFocus(false)}
-                  ></Input>
-                </InputGroup>
-                <div className="textarea-container">
-                  <Input
-                    cols="80"
-                    name="name"
-                    placeholder="Type a message..."
-                    rows="4"
-                    type="textarea"
-                  ></Input>
-                </div>
-                <div className="send-button">
-                  <Button
-                    block
-                    className="btn-round" to="/nucleo-icons"
-                    color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                    size="lg"
-                  >
-                    Send Message
-                  </Button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
+          <SignUp />
         </div>
         <DefaultFooter />
       </div>
