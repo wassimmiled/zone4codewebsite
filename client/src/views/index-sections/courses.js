@@ -156,7 +156,6 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                        <i className="fa fa-user"></i>  &thinsp;&thinsp;
                         Data Science Immersive
                       </NavLink>
                     </NavItem>
@@ -191,8 +190,7 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                        <i class="fa fa-users" ></i>
-                        &thinsp;&thinsp;
+                   
 
                         Front-End Web Development
                       </NavLink>
@@ -228,8 +226,7 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                        <i class="fa fa-users" ></i>
-                        &thinsp;&thinsp;
+                     
 
                         Product Management
                       </NavLink>
