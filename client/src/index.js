@@ -34,6 +34,8 @@ import ModulePage from "views/examples/ModulePage.js";
 import TrackPage from "views/examples/TrackPage.js";
 import TransformYourTalent from "views/examples/TransformYourTalent.js";
 import MarketingSolutions from "views/examples/MarketingSolutions.js";
+import TechSolutions from "views/examples/TechSolutions.js";
+import HirePage from "views/examples/HirePage.js";
 
 
 
@@ -58,14 +60,17 @@ ReactDOM.render(
           path="/corporate-digital-training"
           render={(props) => <TransformYourTalent {...props} />}
         />
-
+ <Route
+          path="/hire-tech-talent"
+          render={(props) => <HirePage {...props} />}
+        />
         <Route
           path="/marketing"
           render={(props) => <MarketingSolutions {...props} />}
         />
         <Route
-          path="/module"
-          render={(props) => <ModulePage {...props} />}
+          path="/tech"
+          render={(props) => <TechSolutions {...props} />}
         />
         <Route
           path="/track"

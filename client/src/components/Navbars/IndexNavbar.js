@@ -162,13 +162,10 @@ function IndexNavbar() {
                   <DropdownItem to="/marketing" tag={Link}>
                     Marketing solutions
                   </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
-                    Data solutions
-                  </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/tech" tag={Link}>
                     Tech solutions
                   </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/hire-tech-talent" tag={Link}>
                     Hire zone4code graduates
                   </DropdownItem>
                   {/* <DropdownItem to="/profile-page" tag={Link}>
