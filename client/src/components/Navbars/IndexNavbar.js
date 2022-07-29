@@ -114,13 +114,13 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test1
                   </DropdownItem> */}
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/pack" tag={Link}>
                     Pack
                   </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/module" tag={Link}>
                     Module
                   </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/track" tag={Link}>
                     Track
                   </DropdownItem>
                   {/* <DropdownItem to="/profile-page" tag={Link}>
@@ -156,10 +156,10 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test1
                   </DropdownItem> */}
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/corporate-digital-training" tag={Link}>
                     Transform your talent
                   </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem to="/marketing" tag={Link}>
                     Marketing solutions
                   </DropdownItem>
                   <DropdownItem to="/landing-page" tag={Link}>

@@ -119,7 +119,7 @@ Zone4Code            </NavbarBrand>
             <Nav navbar>
               <NavItem>
                 <NavLink to="/index" tag={Link}>
-                  Back to Kit
+               Back home page
                 </NavLink>
               </NavItem>
               {/* <NavItem>

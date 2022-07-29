@@ -27,9 +27,15 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 // pages for this kit
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
+import PackPage from "views/examples/PackPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import ModulePage from "views/examples/ModulePage.js";
+import TrackPage from "views/examples/TrackPage.js";
+import TransformYourTalent from "views/examples/TransformYourTalent.js";
+import MarketingSolutions from "views/examples/MarketingSolutions.js";
+
+
 
 ReactDOM.render(
   <BrowserRouter>
@@ -45,12 +51,33 @@ ReactDOM.render(
           render={(props) => <LandingPage {...props} />}
         />
         <Route
+          path="/pack"
+          render={(props) => <PackPage {...props} />}
+        />
+        <Route
+          path="/corporate-digital-training"
+          render={(props) => <TransformYourTalent {...props} />}
+        />
+
+        <Route
+          path="/marketing"
+          render={(props) => <MarketingSolutions {...props} />}
+        />
+        <Route
+          path="/module"
+          render={(props) => <ModulePage {...props} />}
+        />
+        <Route
+          path="/track"
+          render={(props) => <TrackPage {...props} />}
+        />
+        <Route
           path="/profile-page"
           render={(props) => <ProfilePage {...props} />}
         />
         <Route
           path="/login-page"
-          render={(props) => <LoginPage {...props} />}
+          render={(props) => <PackPage {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
