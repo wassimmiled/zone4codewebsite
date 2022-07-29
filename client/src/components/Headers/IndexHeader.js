@@ -29,7 +29,7 @@ function IndexHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/hero-lg_SeopY.png")+ ")",
+              "url(" + require("assets/img/hero-lg_SeopY.png") + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -41,8 +41,10 @@ function IndexHeader() {
               src={require("assets/img/now-logo.png")}
             ></img> */}
             <h1 className="h1-seo">Zone4Code</h1>
-            <h3>Learning Today, Leading Tomorrow</h3>
+            {/* <h3>Learning Today, Leading Tomorrow</h3> */}
+            <h5>We train the next tech generation on the most innovative and recent technologies. We help them get ready for the jobs of the future and prepare them for their professional endeavour while reinforcing their employability
 
+              Discover our programs</h5>
           </div>
           {/* <h6 className="category category-absolute">
             Designed by{" "}

@@ -35,8 +35,9 @@ function LandingPageHeader() {
         <div className="content-center">
 
           <Container>
-            <h2 className="title">WELCOME TO ZONE ACADEMY.</h2>
-            <p className="category">Our courses will step you through the process of building a strong carrer, to create application.</p>
+            <h2 className="title">WELCOME TO ZONE4CODE ACADEMY.</h2>
+            <p className="category">           <h3>Learning Today, Leading Tomorrow</h3>
+            </p>
 
             {/* <div className="text-center">
               <Button
