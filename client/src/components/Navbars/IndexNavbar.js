@@ -156,12 +156,12 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test1
                   </DropdownItem> */}
-                  <DropdownItem to="/corporate-digital-training" tag={Link}>
+                  {/* <DropdownItem to="/corporate-digital-training" tag={Link}>
                     Transform your talent
-                  </DropdownItem>
-                  <DropdownItem to="/marketing" tag={Link}>
+                  </DropdownItem> */}
+                  {/* <DropdownItem to="/marketing" tag={Link}>
                     Marketing solutions
-                  </DropdownItem>
+                  </DropdownItem> */}
                   <DropdownItem to="/tech" tag={Link}>
                     Tech solutions
                   </DropdownItem>

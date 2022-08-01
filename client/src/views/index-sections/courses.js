@@ -12,7 +12,7 @@ import {
   TabPane,
   Container,
   Row,
-  Col,Button
+  Col, Button
 } from "reactstrap";
 import { useHistory } from "react-router-dom";
 
@@ -21,11 +21,11 @@ import { useHistory } from "react-router-dom";
 function Courses() {
   const [iconPills, setIconPills] = React.useState("1");
   const [pills, setPills] = React.useState("1");
-   
+
   const history = useHistory();
-  
-  const routeChange = () =>{ 
-    let path = `/landing-page`; 
+
+  const routeChange = () => {
+    let path = `/landing-page`;
     history.push(path);
   }
 
@@ -50,7 +50,7 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                        Data Analytics Immersive </NavLink>
+                        Front-end ReactJS Developer </NavLink>
                     </NavItem>
                   </Nav>
                 </CardHeader>
@@ -61,7 +61,7 @@ function Courses() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                        Discover how to mine data for insights to help inform strategic business decisions. Pursue an in-demand career as a data analyst by learning SQL, Tableau, PowerBI, Python, and more.
+                        Learn the latest technologies to become a great Front-end developer and build rich, interactive web applications and user interfaces with JavaScript, ES6, and React. Manage "states" with Redux and manipulate external APIs.
                       </p>
                     </TabPane>
 
@@ -86,7 +86,7 @@ function Courses() {
                       >
 
 
-                        Software Engineering Immersive
+                        Become a FullStack Developer
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -98,7 +98,9 @@ function Courses() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                        Break into a high-growth, high-pay career. Dive into computer science, get fluent in key frameworks and stacks, build rich apps, and more.                      </p>
+                        Change your professional path and start a career as a junior FullStack JS developer.
+
+                        The program allows you to undergo intensive training that will allow you to launch a career as a FullStack JS developer and master the technologies demanded by employers.                                   </p>
                     </TabPane>
 
                   </TabContent>
@@ -122,7 +124,8 @@ function Courses() {
                       >
 
 
-                        UX Design Immersive                      </NavLink>
+                        Become a Back-end Web Developer with NodeJS
+                      </NavLink>
                     </NavItem>
                   </Nav>
                 </CardHeader>
@@ -133,7 +136,8 @@ function Courses() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                        Launch a UX career with the research and design skills today's top companies require. Build a professional-grade portfolio that gets noticed.                      </p>
+                        Master the technologies of Back-end development: JavaScript, Node.js, Express, MongoDB, mongoose ... and use it to create the Back-end of your web application independently from the Front-end part. You will also manipulate the NoSQL database and model the data with mongoose.
+                      </p>
                     </TabPane>
 
                   </TabContent>
@@ -156,7 +160,7 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                        Data Science Immersive
+                        Introduction to Web Development
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -168,7 +172,7 @@ function Courses() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                      Master the basics of machine learning to forecast what's next: predict patterns from large datasets using Python.                      </p>
+                        Learn the latest technologies to become a web developer and create websites with HTML, CSS. You will also learn the basics of JavaScript to make your pages interactive                     </p>
                     </TabPane>
 
                   </TabContent>
@@ -190,7 +194,7 @@ function Courses() {
                       //   setPills("1");
                       // }}
                       >
-                   
+
 
                         Front-End Web Development
                       </NavLink>
@@ -204,7 +208,7 @@ function Courses() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                      Use HTML5, CSS3, JavaScript, jQuery, GitHub and Sublime Text to program and lay out a fully responsive, interactive website.                      </p>
+                        Use HTML5, CSS3, JavaScript, jQuery, GitHub and Sublime Text to program and lay out a fully responsive, interactive website.                      </p>
                     </TabPane>
 
                   </TabContent>
@@ -238,7 +242,7 @@ function Courses() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                      Guide a product through its lifecycle via lean methodologies that yield viable, market-ready products that anticipate user needs.                      </p>
+                        Guide a product through its lifecycle via lean methodologies that yield viable, market-ready products that anticipate user needs.                      </p>
                     </TabPane>
 
                   </TabContent>
@@ -246,12 +250,12 @@ function Courses() {
               </Card>
             </Col>
           </Row>
-      <Button color="info" type="button"                 onClick={routeChange}
->
-                Browse courses
-              </Button>
+          <Button color="info" type="button" onClick={routeChange}
+          >
+            Browse courses
+          </Button>
         </Container>
-        
+
       </div>
     </>
   );
