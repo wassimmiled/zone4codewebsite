@@ -29,7 +29,7 @@ function CourseContent(props) {
   }
   return (<div>
 
-    <Button className="btn-round" color="info" id="button-collapse" outline type="button" onClick={() => diplay()}>
+    <Button className="btn-round" id="button-collapse" color="info" outline type="button" onClick={() => diplay()}>
       +
     </Button>        <Collapse isOpen={fadeIn}>
       <Card>
@@ -38,6 +38,9 @@ function CourseContent(props) {
           {props.contentlign1}<br />
           {props.contentlign2}<br />
           {props.contentlign3}<br />
+          {props.contentlign4}<br />
+          {props.contentlign5}<br />
+          {props.contentlign6}<br />
         </CardBody>
       </Card>
     </Collapse>
@@ -54,7 +57,7 @@ function CourseContent(props) {
   );
 }
 
-function ReactPage() {
+function FullStackPage() {
 
 
   React.useEffect(() => {
@@ -80,12 +83,14 @@ function ReactPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Become a Front-end ReactJS Developer
+                <h2 className="title">Become a FullStack Developer
+
                 </h2>
 
                 <h5 className="description">
-                  Learn the latest technologies to become a great Front-end developer and build rich, interactive web applications and user interfaces with JavaScript, ES6, and React. Manage "states" with Redux and manipulate external APIs.
-                </h5>
+                  Change your professional path and start a career as a junior FullStack JS developer.
+
+                  The program allows you to undergo intensive training that will allow you to launch a career as a FullStack JS developer and master the technologies demanded by employers.                </h5>
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
@@ -136,15 +141,15 @@ function ReactPage() {
                   <p>
 
                     <ul>
-                      <li>Find out how React fits into the new generation of web development.</li>
-                      <li>Learn how to build and launch web applications using React JS and Redux.</li>
+                      <li>Become a FullStack JS developer by acquiring the basic skills and knowledge necessary to form a solid foundation of the current demands of the web development market.</li>
                       <li>
-                        Master the fundamental concepts of structuring Redux in your applications.</li>
+                        Learn the MERN stack which includes HTML5, CSS3, JavaScript ES6, ReactJS, Redux, NodeJS, Express, MongoDB and several libraries such as Bootstrap, Axios and Mongoose.</li>
                       <li>
-                        Work with React Hooks.</li>
+                        Familiarize yourself with the world of web development by familiarizing yourself with its tools, lexicon and associated workflow standards.</li>
+                      <li>Making the student part of a community and thus giving him the opportunity to develop his soft skills in a learning atmosphere.</li>
+                      <li>Build a GitHub portfolio, which demonstrates the skills of students for future recruiters..</li>
                       <li>
-                        Learn how to create interactive and rich user interfaces using both Functional Components and Class Components with React Hooks. Create a practical application: a game for children with React.</li>
-                      <li>Learn how to build apps from scratch.</li>
+                        Build a fully functional web application using the MERN stack that will integrate all the knowledge and skills acquired during the training.</li>
                     </ul>
 
 
@@ -162,19 +167,48 @@ function ReactPage() {
         </p>
         <ListGroup>
 
-          <ListGroupItem>1- General overview :<CourseContent contentlign1={"-Define what a web application is ."} contentlign2={"-Understand the difference between web application"} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>2- Discover ES6 :<CourseContent contentlign1={"-Define ES6 ."} contentlign2={"-List the different new features of ES6."} contentlign3={"-Explore ES6."} /></ListGroupItem>
-          <ListGroupItem>3- React.js :<CourseContent contentlign1={"-Discover React."} contentlign2={"-Understand why we use React."} contentlign3={"-Learn about React's features."} /></ListGroupItem>
-          <ListGroupItem>4- Virtual DOM :<CourseContent contentlign1={"-Discover the virtual DOM?"} contentlign2={"-Understand how to use Virtual DOM with React."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>5- Discover JSX :<CourseContent contentlign1={"-Discover JSX Understand and write with JSX."} contentlign2={"-Learn to work with JSX."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>6- React Components :<CourseContent contentlign1={"-Understand the React component."} contentlign2={"-Learn how to create and decompose React components."} contentlign3={"-Optimize your code with React."} /></ListGroupItem>
-          <ListGroupItem>7- React Props :<CourseContent contentlign1={"-Learn to work with React Props."} contentlign2={"-Differentiate between the types of “Props”"} contentlign3={"-Learn the best practices for using “Props”"} /></ListGroupItem>
-          <ListGroupItem>8- React State :<CourseContent contentlign1={"-Learn what React State is and how to use it."} contentlign2={"-Develop a component with Hooks."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>9- React Hooks:<CourseContent contentlign1={"-Handling React Hooks."} contentlign2={"-Avoid common mistakes by using Hooks."} contentlign3={"-Build your own “Hook”."} /></ListGroupItem>
-          <ListGroupItem>10- React Router :<CourseContent contentlign1={"-Understand how React Router works."} contentlign2={"-Produce a multi-router page."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>11- Redux :<CourseContent contentlign1={"-Define what Redux is."} contentlign2={"-Manage the global state with Redux."} contentlign3={"-Manage bugs with Redux."} /></ListGroupItem>
-          <ListGroupItem>12- API :<CourseContent contentlign1={"-Understand how to use the API."} contentlign2={"-Develop a web service."} contentlign3={"-Work with an HTTP request."} /></ListGroupItem>
-
+          <ListGroupItem>1- Web fundamentals <CourseContent
+            contentlign1={"-Differentiate between basic concepts such as: Internet and Web and discover how the Web works."}
+            contentlign2={"-Define the APIs and the “Protocol”."}
+            contentlign3={"-Create your first web page with two different methods."}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>2- HTML <CourseContent
+            contentlign1={"-Learn the basics of HTML and become capable of building website skeletons and essential structures"}
+            contentlign2={""}
+            contentlign3={""}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>3- CSS<CourseContent
+            contentlign1={"-Create websites and recreate / clone preselected designs with CSS."}
+            contentlign2={"-Create different layouts with CSS: manage positioning and use Flexbox, CSS Grid, Bootstrap."}
+            contentlign3={""}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>4- JavaScript<CourseContent
+            contentlign1={"-Learn the basics of JavaScript."}
+            contentlign2={"-Discover the essential principles on which the rest of the training will be built on."}
+            contentlign3={""}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>5- Document Object Model<CourseContent
+            contentlign1={"-With the Dom, you can manipulate the HTML content and styles of your pages."}
+            contentlign2={""}
+            contentlign3={""}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>6- Git and github<CourseContent
+            contentlign1={"-Discover Git and Github."}
+            contentlign2={"-Learn Github features and manipulate projects using it."}
+            contentlign3={""}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
         </ListGroup>
         <div className="section section-contact-us text-center">
           <SignUp />
@@ -185,4 +219,4 @@ function ReactPage() {
   );
 }
 
-export default ReactPage;
+export default FullStackPage;

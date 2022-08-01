@@ -93,6 +93,14 @@ function ExamplesNavbar() {
               target="_blank"
               id="navbar-brand"
             >
+               <img
+            alt="..."
+            width="50" height="50"
+            className="invision-logo"
+            src={require("assets/img/brain.png")
+          }
+          ></img>
+          &thinsp;&thinsp; 
 Zone4Code            </NavbarBrand>
             {/* <UncontrolledTooltip target="#navbar-brand">
               Designed by Invision. Coded by Creative Tim
@@ -119,7 +127,7 @@ Zone4Code            </NavbarBrand>
             <Nav navbar>
               <NavItem>
                 <NavLink to="/index" tag={Link}>
-               Back home page
+               Back to home page
                 </NavLink>
               </NavItem>
               {/* <NavItem>

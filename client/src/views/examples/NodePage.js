@@ -29,7 +29,7 @@ function CourseContent(props) {
   }
   return (<div>
 
-    <Button className="btn-round" color="info" id="button-collapse" outline type="button" onClick={() => diplay()}>
+    <Button className="btn-round" id="button-collapse"color="info" outline type="button" onClick={() => diplay()}>
       +
     </Button>        <Collapse isOpen={fadeIn}>
       <Card>
@@ -38,6 +38,9 @@ function CourseContent(props) {
           {props.contentlign1}<br />
           {props.contentlign2}<br />
           {props.contentlign3}<br />
+          {props.contentlign4}<br />
+          {props.contentlign5}<br />
+          {props.contentlign6}<br />
         </CardBody>
       </Card>
     </Collapse>
@@ -54,7 +57,7 @@ function CourseContent(props) {
   );
 }
 
-function ReactPage() {
+function NodePage() {
 
 
   React.useEffect(() => {
@@ -80,11 +83,11 @@ function ReactPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Become a Front-end ReactJS Developer
+                <h2 className="title">Become a Back-end Web Developer with NodeJS
                 </h2>
 
                 <h5 className="description">
-                  Learn the latest technologies to become a great Front-end developer and build rich, interactive web applications and user interfaces with JavaScript, ES6, and React. Manage "states" with Redux and manipulate external APIs.
+                Master the technologies of Back-end development: JavaScript, Node.js, Express, MongoDB, mongoose ... and use it to create the Back-end of your web application independently from the Front-end part. You will also manipulate the NoSQL database and model the data with mongoose.
                 </h5>
               </Col>
             </Row>
@@ -136,16 +139,13 @@ function ReactPage() {
                   <p>
 
                     <ul>
-                      <li>Find out how React fits into the new generation of web development.</li>
-                      <li>Learn how to build and launch web applications using React JS and Redux.</li>
-                      <li>
-                        Master the fundamental concepts of structuring Redux in your applications.</li>
-                      <li>
-                        Work with React Hooks.</li>
-                      <li>
-                        Learn how to create interactive and rich user interfaces using both Functional Components and Class Components with React Hooks. Create a practical application: a game for children with React.</li>
-                      <li>Learn how to build apps from scratch.</li>
-                    </ul>
+                      <li>Master all modern Back-end technologies: Node, Express, MongoDB and Mongoose (MongoDB JS driver).</li>
+                      <li>Build high quality applications with Node, Express and MongoDB.</li>
+                      <li>Apply best practices to build fast, scalable, and secure applications.</li>
+                      <li>Build a feature-rich RESTful API</li>
+                      <li>Understand the NoSQL database.</li>
+                      <li>Handling databases with an ODM (Mongoose).</li>
+                      <li>Build the back-end of a web application.</li></ul>
 
 
                   </p>
@@ -162,19 +162,41 @@ function ReactPage() {
         </p>
         <ListGroup>
 
-          <ListGroupItem>1- General overview :<CourseContent contentlign1={"-Define what a web application is ."} contentlign2={"-Understand the difference between web application"} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>2- Discover ES6 :<CourseContent contentlign1={"-Define ES6 ."} contentlign2={"-List the different new features of ES6."} contentlign3={"-Explore ES6."} /></ListGroupItem>
-          <ListGroupItem>3- React.js :<CourseContent contentlign1={"-Discover React."} contentlign2={"-Understand why we use React."} contentlign3={"-Learn about React's features."} /></ListGroupItem>
-          <ListGroupItem>4- Virtual DOM :<CourseContent contentlign1={"-Discover the virtual DOM?"} contentlign2={"-Understand how to use Virtual DOM with React."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>5- Discover JSX :<CourseContent contentlign1={"-Discover JSX Understand and write with JSX."} contentlign2={"-Learn to work with JSX."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>6- React Components :<CourseContent contentlign1={"-Understand the React component."} contentlign2={"-Learn how to create and decompose React components."} contentlign3={"-Optimize your code with React."} /></ListGroupItem>
-          <ListGroupItem>7- React Props :<CourseContent contentlign1={"-Learn to work with React Props."} contentlign2={"-Differentiate between the types of “Props”"} contentlign3={"-Learn the best practices for using “Props”"} /></ListGroupItem>
-          <ListGroupItem>8- React State :<CourseContent contentlign1={"-Learn what React State is and how to use it."} contentlign2={"-Develop a component with Hooks."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>9- React Hooks:<CourseContent contentlign1={"-Handling React Hooks."} contentlign2={"-Avoid common mistakes by using Hooks."} contentlign3={"-Build your own “Hook”."} /></ListGroupItem>
-          <ListGroupItem>10- React Router :<CourseContent contentlign1={"-Understand how React Router works."} contentlign2={"-Produce a multi-router page."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>11- Redux :<CourseContent contentlign1={"-Define what Redux is."} contentlign2={"-Manage the global state with Redux."} contentlign3={"-Manage bugs with Redux."} /></ListGroupItem>
-          <ListGroupItem>12- API :<CourseContent contentlign1={"-Understand how to use the API."} contentlign2={"-Develop a web service."} contentlign3={"-Work with an HTTP request."} /></ListGroupItem>
-
+          <ListGroupItem>1- Node.js :<CourseContent
+            contentlign1={"-Learn about Node.js and its terms."}
+            contentlign2={"-Understand how to configure the development environment."}
+            contentlign3={"-Develop a first application."}
+            contentlign4={"-Understand the Node.js Package Manager."}
+            contentlign5={"-Understand the callback function."}
+            contentlign6={"-Work with the file system."} /></ListGroupItem>
+          <ListGroupItem>2- Express :<CourseContent
+            contentlign1={"-Understand the Express framework."}
+            contentlign2={"-Learn to configure the environment."}
+            contentlign3={"-Create your first app."}
+            contentlign4={"-Understand routing with Express."}
+            contentlign5={"-Work with the template engine."}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>3- Mongo DB (CRUD)<CourseContent
+            contentlign1={"-Understand the NoSQL database."}
+            contentlign2={"-Handling Mongo DB."}
+            contentlign3={"-Manipulate data with the NoSQL database."}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>4- Mongoose<CourseContent
+            contentlign1={"-Understand the use of ODM."}
+            contentlign2={"-Discover the use of the “schema”."}
+            contentlign3={"-Implement basic operations on a database."}
+            contentlign4={""}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
+          <ListGroupItem>5- Rest API<CourseContent
+            contentlign1={"-Understand what a Restful API is."}
+            contentlign2={"-Learn web architecture (client / server)."}
+            contentlign3={"-Work with HTTP methods."}
+            contentlign4={"-Develop a Restful API."}
+            contentlign5={""}
+            contentlign6={""} /></ListGroupItem>
         </ListGroup>
         <div className="section section-contact-us text-center">
           <SignUp />
@@ -185,4 +207,4 @@ function ReactPage() {
   );
 }
 
-export default ReactPage;
+export default NodePage;

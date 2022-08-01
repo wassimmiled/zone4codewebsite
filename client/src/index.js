@@ -37,6 +37,8 @@ import MarketingSolutions from "views/examples/MarketingSolutions.js";
 import TechSolutions from "views/examples/TechSolutions.js";
 import HirePage from "views/examples/HirePage.js";
 import ReactPage from "views/examples/ReactPage.js";
+import NodePage from "views/examples/NodePage.js";
+import FullStackPage from "views/examples/FullStackPage.js";
 
 
 
@@ -92,8 +94,15 @@ ReactDOM.render(
           path="/react-course"
           render={(props) => <ReactPage {...props} />}
         />
+<Route
+          path="/node-course"
+          render={(props) => <NodePage {...props} />}
+        />
 
-
+<Route
+          path="/full-stack-course"
+          render={(props) => <FullStackPage {...props} />}
+        />
 
 
 

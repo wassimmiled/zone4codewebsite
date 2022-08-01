@@ -49,8 +49,8 @@ function Index() {
           {/* <Images /> */}
              <Tabs />
              <Courses/>
-             <Events/>
-       {/*    <BasicElements />
+        {/*       <Events/>
+         <BasicElements />
           <Navbars />
       
           <Pagination />

@@ -57,7 +57,14 @@ function IndexNavbar() {
               // href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
               target="_blank"
               id="navbar-brand"
-            >
+            >  <img
+            alt="..."
+            width="50" height="50"
+            className="invision-logo"
+            src={require("assets/img/brain.png")
+          }
+          ></img>
+          &thinsp;&thinsp; 
               Zone4Code
             </NavbarBrand>
             {/* <UncontrolledTooltip target="#navbar-brand">
@@ -106,7 +113,7 @@ function IndexNavbar() {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Courses</p>
+                  <p>For individuals</p>
                 </DropdownToggle>
                 <DropdownMenu>
 
@@ -114,14 +121,14 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     test1
                   </DropdownItem> */}
-                  <DropdownItem to="/pack" tag={Link}>
-                    Pack
+                  <DropdownItem to="/react-course" tag={Link}>
+                  Front-end Developer
                   </DropdownItem>
-                  <DropdownItem to="/module" tag={Link}>
-                    Module
+                  <DropdownItem to="/node-course" tag={Link}>
+                    Back-end Developer
                   </DropdownItem>
-                  <DropdownItem to="/track" tag={Link}>
-                    Track
+                  <DropdownItem to="/full-stack-course" tag={Link}>
+                  FullStack Developer
                   </DropdownItem>
                   {/* <DropdownItem to="/profile-page" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>

@@ -24,119 +24,10 @@ function Tabs() {
     <>
       <div className="section section-tabs">
         <Container>
+        <p className="category">Mode of education
+          </p>
           <Row>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
-              {/* <p className="category">Tabs with Icons on Card</p> */}
-              {/* <Card>
-                <CardHeader>
-                  <Nav className="justify-content-center" role="tablist" tabs>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("1");
-                        }}
-                      >
-                        <i className="now-ui-icons objects_umbrella-13"></i>
-                        Home
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("2");
-                        }}
-                      >
-                        <i className="now-ui-icons shopping_cart-simple"></i>
-                        Profile
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("3");
-                        }}
-                      >
-                        <i className="now-ui-icons shopping_shop"></i>
-                        Messages
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "4" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("4");
-                        }}
-                      >
-                        <i className="now-ui-icons ui-2_settings-90"></i>
-                        Settings
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
-                </CardHeader>
-                <CardBody>
-                  <TabContent
-                    className="text-center"
-                    activeTab={"iconPills" + iconPills}
-                  >
-                    <TabPane tabId="iconPills1">
-                      <p>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="iconPills2">
-                      <p>
-                        I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture. I am the nucleus. I think that’s a
-                        responsibility that I have, to push possibilities, to
-                        show people, this is the level that things could be at.
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="iconPills3">
-                      <p>
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at. So when you get something that has
-                        the name Kanye West on it, it’s supposed to be pushing
-                        the furthest possibilities. I will be the leader of a
-                        company that ends up being worth billions of dollars,
-                        because I got the answers. I understand culture. I am
-                        the nucleus.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="iconPills4">
-                      <p>
-                        "I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture. I am the nucleus. I think that’s a
-                        responsibility that I have, to push possibilities, to
-                        show people, this is the level that things could be at."
-                      </p>
-                    </TabPane>
-                  </TabContent>
-                </CardBody>
-              </Card> */}
+            <Col className="ml-auto mr-auto" md="4" xl="4">
               <Card>
                 <CardHeader>
                   <Nav
@@ -154,8 +45,7 @@ function Tabs() {
                       //   setPills("1");
                       // }}
                       >
-                        <i className="fa fa-user"></i>  &thinsp;&thinsp;
-                        INDIVIDUALS
+                        Pack
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -167,7 +57,7 @@ function Tabs() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                        Get ahead with expert-led training in coding, data, design, digital marketing, and more.
+                        The idea is to give the student access to a set of well-selected training courses that allow him to focus on a specialty (backend, devops, etc.)
                       </p>
                     </TabPane>
 
@@ -175,7 +65,7 @@ function Tabs() {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="ml-auto mr-auto" md="10" xl="6">
+            <Col className="ml-auto mr-auto" md="4" xl="4">
               {/* <p className="category">Tabs with Background on Card</p> */}
               <Card>
                 <CardHeader>
@@ -194,10 +84,9 @@ function Tabs() {
                       //   setPills("1");
                       // }}
                       >
-                        <i class="fa fa-users" ></i>
-                        &thinsp;&thinsp;
 
-                        COMPANIES
+
+                        Module
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -209,7 +98,45 @@ function Tabs() {
                   >
                     <TabPane tabId="pills1">
                       <p>
-                        Transform your workforce with intensive training, assessments, and an exclusive hiring pipeline.
+                        The idea is to give the student access to a set of well-selected trainings that allow him to gain skills of a particular language (max 3 trainings ).                      </p>
+                    </TabPane>
+
+                  </TabContent>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col className="ml-auto mr-auto" md="4" xl="4">
+              {/* <p className="category">Tabs with Background on Card</p> */}
+              <Card>
+                <CardHeader>
+                  <Nav
+                    className="nav-tabs-neutral justify-content-center"
+                    data-background-color="blue"
+                    role="tablist"
+                    tabs
+                  >
+                    <NavItem>
+                      <NavLink
+                        className={"active"}
+                      // href="#pablo"
+                      // onClick={(e) => {
+                      //   e.preventDefault();
+                      //   setPills("1");
+                      // }}
+                      >
+                        Track
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                </CardHeader>
+                <CardBody>
+                  <TabContent
+                    className="text-center"
+                    activeTab={"pills" + pills}
+                  >
+                    <TabPane tabId="pills1">
+                      <p>
+                        The idea is to give the student access to a single training course .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       </p>
                     </TabPane>
 

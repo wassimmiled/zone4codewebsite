@@ -57,6 +57,9 @@ function Courses() {
                     <TabPane tabId="pills1">
                       <p>
                         Learn the latest technologies to become a great Front-end developer and build rich, interactive web applications and user interfaces with JavaScript, ES6, and React. Manage "states" with Redux and manipulate external APIs.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     
+                     
                       </p>
                     </TabPane>
 
@@ -96,6 +99,8 @@ function Courses() {
                         Change your professional path and start a career as a junior FullStack JS developer.
 
                         The program allows you to undergo intensive training that will allow you to launch a career as a FullStack JS developer and master the technologies demanded by employers.                                   </p>
+                   
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </TabPane>
 
                   </TabContent>
@@ -140,7 +145,7 @@ function Courses() {
               </Card>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col className="ml-auto mr-auto" md="10" xl="4">
               <Card>
                 <CardHeader>
@@ -175,7 +180,6 @@ function Courses() {
               </Card>
             </Col>
             <Col className="ml-auto mr-auto" md="10" xl="4">
-              {/* <p className="category">Tabs with Background on Card</p> */}
               <Card>
                 <CardHeader>
                   <Nav className="justify-content-center" role="tablist" tabs>
@@ -210,8 +214,7 @@ function Courses() {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="ml-auto mr-auto" md="10" xl="4">
-              {/* <p className="category">Tabs with Background on Card</p> */}
+           <Col className="ml-auto mr-auto" md="10" xl="4">
               <Card>
                 <CardHeader>
                   <Nav className="justify-content-center" role="tablist" tabs>
@@ -243,8 +246,8 @@ function Courses() {
                   </TabContent>
                 </CardBody>
               </Card>
-            </Col>
-          </Row>
+            </Col> 
+          </Row> */}
           <Button color="info" type="button" 
            onClick={() => routeChange('/landing-page')}
           >

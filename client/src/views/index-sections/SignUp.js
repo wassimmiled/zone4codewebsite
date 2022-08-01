@@ -16,7 +16,8 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Row,
+  Row, Modal,
+  ModalBody
 } from "reactstrap";
 
 // core components
@@ -25,6 +26,8 @@ function SignUp() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
+  const [modal1, setModal1] = React.useState(false);
+  const [modal2, setModal2] = React.useState(false);
   const [inputValueFirstname, setInputValueFirstname] = React.useState("");
   const [inputValueEmail, setInputValueEmail] = React.useState("");
   const [inputValueEmailContent, setInputValueEmailContent] = React.useState("");
@@ -42,6 +45,9 @@ function SignUp() {
     console.log('setInputValueEmailContent', inputValueEmailContent)
   };
   const onSubmit = event => {
+    if (inputValueFirstname && inputValueEmail && inputValueEmailContent) {
+      setModal2(true)
+    }
     event.preventDefault()
     console.log(inputValueFirstname, inputValueEmail, inputValueEmailContent)
     axios.post("http://localhost:3001/api/emailing/sendmail", {
@@ -63,7 +69,36 @@ function SignUp() {
         }}
       >
 
+        <Col md="6">
 
+
+
+          <Modal
+            modalClassName="modal-mini modal-info"
+            toggle={() => setModal2(false)}
+            isOpen={modal2}
+          >
+            <div className="modal-header justify-content-center">
+              <div className="modal-profile">
+                <i className="now-ui-icons ui-1_check"></i>
+              </div>
+            </div>
+            <ModalBody>
+              <p>Your message has been sent successfully</p>
+            </ModalBody>
+            <div className="modal-footer">
+
+              <Button
+                className="btn-neutral"
+                color="link"
+                type="button"
+                onClick={() => setModal2(false)}
+              >
+                Close
+              </Button>
+            </div>
+          </Modal>
+        </Col>
 
         <div className="section section-contact-us text-center">
           <Container>
@@ -114,7 +149,6 @@ function SignUp() {
                     cols="80"
                     name="name"
                     onChange={onChangeHandlerEmailContent}
-
                     placeholder="Type a message..."
                     rows="4"
                     type="textarea"
@@ -132,6 +166,7 @@ function SignUp() {
                   >
                     Send Message
                   </Button>
+
                 </div>
               </Col>
             </Row>
