@@ -36,6 +36,8 @@ import TransformYourTalent from "views/examples/TransformYourTalent.js";
 import MarketingSolutions from "views/examples/MarketingSolutions.js";
 import TechSolutions from "views/examples/TechSolutions.js";
 import HirePage from "views/examples/HirePage.js";
+import ReactPage from "views/examples/ReactPage.js";
+
 
 
 
@@ -60,7 +62,7 @@ ReactDOM.render(
           path="/corporate-digital-training"
           render={(props) => <TransformYourTalent {...props} />}
         />
- <Route
+        <Route
           path="/hire-tech-talent"
           render={(props) => <HirePage {...props} />}
         />
@@ -84,6 +86,25 @@ ReactDOM.render(
           path="/login-page"
           render={(props) => <PackPage {...props} />}
         />
+{/* Courses details */}
+
+<Route
+          path="/react-course"
+          render={(props) => <ReactPage {...props} />}
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>

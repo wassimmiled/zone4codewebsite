@@ -8,15 +8,15 @@ router.post("/sendmail", (req, res) => {
 	var transporter = nodemailer.createTransport({
 		host: "smtp.ethereal.email",
 		auth: {
-			user: "sasha.denesik@ethereal.email", // generated ethereal user
-			pass: "b3sRg5K6QnMarsUru8", // generated ethereal password
+			user: "raoul.west70@ethereal.email", // generated ethereal user
+			pass: "sQJTSsXtrqqUP4Ac2W", // generated ethereal password
 		},
 		debug: true, // show debug output
 		logger: true // log information in console
 	});
 	var mailOptions = {
 		from: "noreply.zone4code@gmail.com",
-		to: "sasha.denesik@ethereal.email",
+		to: "raoul.west70@ethereal.email",
 		subject: req.body.ValueFirstname +"/"+req.body.ValueEmail,
 		text: req.body.ValueEmailContent
 	};

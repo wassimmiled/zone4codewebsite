@@ -24,8 +24,7 @@ function Courses() {
 
   const history = useHistory();
 
-  const routeChange = () => {
-    let path = `/landing-page`;
+  const routeChange = (path) => {
     history.push(path);
   }
 
@@ -44,12 +43,8 @@ function Courses() {
                     <NavItem>
                       <NavLink
                         className={"active"}
-                      // href="#pablo"
-                      // onClick={(e) => {
-                      //   e.preventDefault();
-                      //   setPills("1");
-                      // }}
-                      >
+                        onClick={() => routeChange('/react-course')}
+                        >
                         Front-end ReactJS Developer </NavLink>
                     </NavItem>
                   </Nav>
@@ -250,7 +245,8 @@ function Courses() {
               </Card>
             </Col>
           </Row>
-          <Button color="info" type="button" onClick={routeChange}
+          <Button color="info" type="button" 
+           onClick={() => routeChange('/landing-page')}
           >
             Browse courses
           </Button>
