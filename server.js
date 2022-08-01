@@ -8,6 +8,7 @@ const BodyParser = require('body-parser');
 const logger = require('morgan');
 const path = require('path')
 const app = express();
+var cors = require('cors')
 
 require("dotenv").config();
 
@@ -42,6 +43,7 @@ var emailing = require('./server/routes/emailing')
 
 
 app.use('/api/emailing', emailing);
+app.use(cors())
 
 
 if (process.env.NODE_ENV == 'production') {
@@ -51,7 +53,7 @@ if (process.env.NODE_ENV == 'production') {
   });
 }
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 7000
 console.log('process.env.PORT', process.env.PORT, process.env.NODE_ENV)
 const server = app.listen( port, function() {
-  console.log(`🚀  API listening at port ${process.env.PORT || 3001}`);  });
+  console.log(`🚀  API listening at port ${process.env.PORT || 7000}`);  });
