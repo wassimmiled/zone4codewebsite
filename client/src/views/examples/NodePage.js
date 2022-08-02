@@ -157,19 +157,23 @@ function NodePage() {
         <div>
 
         </div>
-        <p className="category">                    Rich content
+        <div className="section section-tabs">
+          <Container>
 
-        </p>
+            <Row>
+              <Col className="ml-auto mr-auto" md="4" xl="8">
+                <p className="category">Rich content
+                </p>
         <ListGroup>
 
-          <ListGroupItem>1- Node.js :<CourseContent
+          <ListGroupItem>1- Node.js <CourseContent
             contentlign1={"-Learn about Node.js and its terms."}
             contentlign2={"-Understand how to configure the development environment."}
             contentlign3={"-Develop a first application."}
             contentlign4={"-Understand the Node.js Package Manager."}
             contentlign5={"-Understand the callback function."}
             contentlign6={"-Work with the file system."} /></ListGroupItem>
-          <ListGroupItem>2- Express :<CourseContent
+          <ListGroupItem>2- Express <CourseContent
             contentlign1={"-Understand the Express framework."}
             contentlign2={"-Learn to configure the environment."}
             contentlign3={"-Create your first app."}
@@ -198,6 +202,12 @@ function NodePage() {
             contentlign5={""}
             contentlign6={""} /></ListGroupItem>
         </ListGroup>
+              </Col>
+
+            </Row>
+
+          </Container>
+        </div>
         <div className="section section-contact-us text-center">
           <SignUp />
         </div>

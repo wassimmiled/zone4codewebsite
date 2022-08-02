@@ -162,54 +162,66 @@ function FullStackPage() {
         <div>
 
         </div>
-        <p className="category">                    Rich content
 
-        </p>
-        <ListGroup>
+        <div className="section section-tabs">
+          <Container>
 
-          <ListGroupItem>1- Web fundamentals <CourseContent
-            contentlign1={"-Differentiate between basic concepts such as: Internet and Web and discover how the Web works."}
-            contentlign2={"-Define the APIs and the “Protocol”."}
-            contentlign3={"-Create your first web page with two different methods."}
-            contentlign4={""}
-            contentlign5={""}
-            contentlign6={""} /></ListGroupItem>
-          <ListGroupItem>2- HTML <CourseContent
-            contentlign1={"-Learn the basics of HTML and become capable of building website skeletons and essential structures"}
-            contentlign2={""}
-            contentlign3={""}
-            contentlign4={""}
-            contentlign5={""}
-            contentlign6={""} /></ListGroupItem>
-          <ListGroupItem>3- CSS<CourseContent
-            contentlign1={"-Create websites and recreate / clone preselected designs with CSS."}
-            contentlign2={"-Create different layouts with CSS: manage positioning and use Flexbox, CSS Grid, Bootstrap."}
-            contentlign3={""}
-            contentlign4={""}
-            contentlign5={""}
-            contentlign6={""} /></ListGroupItem>
-          <ListGroupItem>4- JavaScript<CourseContent
-            contentlign1={"-Learn the basics of JavaScript."}
-            contentlign2={"-Discover the essential principles on which the rest of the training will be built on."}
-            contentlign3={""}
-            contentlign4={""}
-            contentlign5={""}
-            contentlign6={""} /></ListGroupItem>
-          <ListGroupItem>5- Document Object Model<CourseContent
-            contentlign1={"-With the Dom, you can manipulate the HTML content and styles of your pages."}
-            contentlign2={""}
-            contentlign3={""}
-            contentlign4={""}
-            contentlign5={""}
-            contentlign6={""} /></ListGroupItem>
-          <ListGroupItem>6- Git and github<CourseContent
-            contentlign1={"-Discover Git and Github."}
-            contentlign2={"-Learn Github features and manipulate projects using it."}
-            contentlign3={""}
-            contentlign4={""}
-            contentlign5={""}
-            contentlign6={""} /></ListGroupItem>
-        </ListGroup>
+            <Row>
+              <Col className="ml-auto mr-auto" md="4" xl="8">
+                <p className="category">Rich content
+                </p>
+                <ListGroup>
+                  <ListGroupItem>1- Web fundamentals <CourseContent
+                    contentlign1={"-Differentiate between basic concepts such as: Internet and Web and discover how the Web works."}
+                    contentlign2={"-Define the APIs and the “Protocol”."}
+                    contentlign3={"-Create your first web page with two different methods."}
+                    contentlign4={""}
+                    contentlign5={""}
+                    contentlign6={""} /></ListGroupItem>
+                  <ListGroupItem>2- HTML <CourseContent
+                    contentlign1={"-Learn the basics of HTML and become capable of building website skeletons and essential structures"}
+                    contentlign2={""}
+                    contentlign3={""}
+                    contentlign4={""}
+                    contentlign5={""}
+                    contentlign6={""} /></ListGroupItem>
+                  <ListGroupItem>3- CSS<CourseContent
+                    contentlign1={"-Create websites and recreate / clone preselected designs with CSS."}
+                    contentlign2={"-Create different layouts with CSS: manage positioning and use Flexbox, CSS Grid, Bootstrap."}
+                    contentlign3={""}
+                    contentlign4={""}
+                    contentlign5={""}
+                    contentlign6={""} /></ListGroupItem>
+                  <ListGroupItem>4- JavaScript<CourseContent
+                    contentlign1={"-Learn the basics of JavaScript."}
+                    contentlign2={"-Discover the essential principles on which the rest of the training will be built on."}
+                    contentlign3={""}
+                    contentlign4={""}
+                    contentlign5={""}
+                    contentlign6={""} /></ListGroupItem>
+                  <ListGroupItem>5- Document Object Model<CourseContent
+                    contentlign1={"-With the Dom, you can manipulate the HTML content and styles of your pages."}
+                    contentlign2={""}
+                    contentlign3={""}
+                    contentlign4={""}
+                    contentlign5={""}
+                    contentlign6={""} /></ListGroupItem>
+                  <ListGroupItem>6- Git and github<CourseContent
+                    contentlign1={"-Discover Git and Github."}
+                    contentlign2={"-Learn Github features and manipulate projects using it."}
+                    contentlign3={""}
+                    contentlign4={""}
+                    contentlign5={""}
+                    contentlign6={""} /></ListGroupItem>
+                </ListGroup>
+              </Col>
+
+            </Row>
+
+          </Container>
+        </div>
+
+
         <div className="section section-contact-us text-center">
           <SignUp />
         </div>

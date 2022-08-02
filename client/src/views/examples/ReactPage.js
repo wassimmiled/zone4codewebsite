@@ -157,25 +157,34 @@ function ReactPage() {
         <div>
 
         </div>
-        <p className="category">                    Rich content
+        <div className="section section-tabs">
+          <Container>
 
-        </p>
-        <ListGroup>
+            <Row>
+              <Col className="ml-auto mr-auto" md="4" xl="8">
+                <p className="category">Rich content
+                </p>
+                <ListGroup>
 
-          <ListGroupItem>1- General overview :<CourseContent contentlign1={"-Define what a web application is ."} contentlign2={"-Understand the difference between web application"} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>2- Discover ES6 :<CourseContent contentlign1={"-Define ES6 ."} contentlign2={"-List the different new features of ES6."} contentlign3={"-Explore ES6."} /></ListGroupItem>
-          <ListGroupItem>3- React.js :<CourseContent contentlign1={"-Discover React."} contentlign2={"-Understand why we use React."} contentlign3={"-Learn about React's features."} /></ListGroupItem>
-          <ListGroupItem>4- Virtual DOM :<CourseContent contentlign1={"-Discover the virtual DOM?"} contentlign2={"-Understand how to use Virtual DOM with React."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>5- Discover JSX :<CourseContent contentlign1={"-Discover JSX Understand and write with JSX."} contentlign2={"-Learn to work with JSX."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>6- React Components :<CourseContent contentlign1={"-Understand the React component."} contentlign2={"-Learn how to create and decompose React components."} contentlign3={"-Optimize your code with React."} /></ListGroupItem>
-          <ListGroupItem>7- React Props :<CourseContent contentlign1={"-Learn to work with React Props."} contentlign2={"-Differentiate between the types of “Props”"} contentlign3={"-Learn the best practices for using “Props”"} /></ListGroupItem>
-          <ListGroupItem>8- React State :<CourseContent contentlign1={"-Learn what React State is and how to use it."} contentlign2={"-Develop a component with Hooks."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>9- React Hooks:<CourseContent contentlign1={"-Handling React Hooks."} contentlign2={"-Avoid common mistakes by using Hooks."} contentlign3={"-Build your own “Hook”."} /></ListGroupItem>
-          <ListGroupItem>10- React Router :<CourseContent contentlign1={"-Understand how React Router works."} contentlign2={"-Produce a multi-router page."} contentlign3={""} /></ListGroupItem>
-          <ListGroupItem>11- Redux :<CourseContent contentlign1={"-Define what Redux is."} contentlign2={"-Manage the global state with Redux."} contentlign3={"-Manage bugs with Redux."} /></ListGroupItem>
-          <ListGroupItem>12- API :<CourseContent contentlign1={"-Understand how to use the API."} contentlign2={"-Develop a web service."} contentlign3={"-Work with an HTTP request."} /></ListGroupItem>
+                  <ListGroupItem>1- General overview <CourseContent contentlign1={"-Define what a web application is ."} contentlign2={"-Understand the difference between web application"} contentlign3={""} /></ListGroupItem>
+                  <ListGroupItem>2- Discover ES6 <CourseContent contentlign1={"-Define ES6 ."} contentlign2={"-List the different new features of ES6."} contentlign3={"-Explore ES6."} /></ListGroupItem>
+                  <ListGroupItem>3- React.js <CourseContent contentlign1={"-Discover React."} contentlign2={"-Understand why we use React."} contentlign3={"-Learn about React's features."} /></ListGroupItem>
+                  <ListGroupItem>4- Virtual DOM <CourseContent contentlign1={"-Discover the virtual DOM?"} contentlign2={"-Understand how to use Virtual DOM with React."} contentlign3={""} /></ListGroupItem>
+                  <ListGroupItem>5- Discover JSX <CourseContent contentlign1={"-Discover JSX Understand and write with JSX."} contentlign2={"-Learn to work with JSX."} contentlign3={""} /></ListGroupItem>
+                  <ListGroupItem>6- React Components <CourseContent contentlign1={"-Understand the React component."} contentlign2={"-Learn how to create and decompose React components."} contentlign3={"-Optimize your code with React."} /></ListGroupItem>
+                  <ListGroupItem>7- React Props <CourseContent contentlign1={"-Learn to work with React Props."} contentlign2={"-Differentiate between the types of “Props”"} contentlign3={"-Learn the best practices for using “Props”"} /></ListGroupItem>
+                  <ListGroupItem>8- React State <CourseContent contentlign1={"-Learn what React State is and how to use it."} contentlign2={"-Develop a component with Hooks."} contentlign3={""} /></ListGroupItem>
+                  <ListGroupItem>9- React Hooks<CourseContent contentlign1={"-Handling React Hooks."} contentlign2={"-Avoid common mistakes by using Hooks."} contentlign3={"-Build your own “Hook”."} /></ListGroupItem>
+                  <ListGroupItem>10- React Router <CourseContent contentlign1={"-Understand how React Router works."} contentlign2={"-Produce a multi-router page."} contentlign3={""} /></ListGroupItem>
+                  <ListGroupItem>11- Redux <CourseContent contentlign1={"-Define what Redux is."} contentlign2={"-Manage the global state with Redux."} contentlign3={"-Manage bugs with Redux."} /></ListGroupItem>
+                  <ListGroupItem>12- API <CourseContent contentlign1={"-Understand how to use the API."} contentlign2={"-Develop a web service."} contentlign3={"-Work with an HTTP request."} /></ListGroupItem>
+                </ListGroup>
+              </Col>
 
-        </ListGroup>
+            </Row>
+
+          </Container>
+        </div>
         <div className="section section-contact-us text-center">
           <SignUp />
         </div>
